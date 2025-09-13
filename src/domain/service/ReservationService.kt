@@ -16,6 +16,9 @@ class ReservationService {
     }
     fun getAllHotelReservations(): List<HotelReservation> = hotelReservations.values.toList()
 
+
+
+
     fun getNextPlaneId(): Int = ++lastIdPlane
     fun addPlaneReservation(reservation: PlaneReservation) {
         planeReservations[reservation.id] = reservation
